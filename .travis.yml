@@ -1,0 +1,10 @@
+language: R
+sudo: false
+cache: packages
+dist: trusty
+warnings_are_errors: false
+after_success:
+- Rscript -e 'covr::codecov()'
+env:
+  global:
+  - secure: vbp7IU+4nUxzh8D33G2Wl7RZcL9sn1A/zjdLJ9U489Efy0HgSjlhAd5iko2kSjx5JlFeVol80Vd8kLlov6V9/PjBGIUfTO/g1CFFwfqS4cC5vETqbu2uQqFR5d/jkinQBx+H8LXvCBMWVZmrkn7uZ4KQtbaAco4661Ej/YfhyggfyeWHC0J9Qb7B8be1DYKzAkn/7QPw1sefTCeSOKgkGct0RgQ2rK4NVbxcYT+x5h3Vnt9YUuLS9l9B+u1le5JWx0dk24r5OwyalomoAmmS4I78FM1f2aKcq3bqyfNX0JdFWISka09wWBdhtuRNmedWPcocqEP18Tm7FORo8JRXbvKL+yldKODiUSEUT/JUoTlvLFDXwIZm/htA52NSTXEV+AB2dHR07xYB1ol2k1q1aDtuU+zCq34IMpEvUjxluWgkxYg8oGyIaduXL1DXSGgm3rmT1BaqcuEKscZLL2XO7weY+KlFnR4By1yaZHC5QmPeuM4l1zc0me9KUXPkolhmIEjX+NoGp4rvmprxzWqmAdkdHuhp4pb3u3hq+b1zKAWSUgAmEsvmramtJYHqlwB0SoP+c2cc/kKX1rj3TU1BynzIvkdW81BX+kT76yf+V2gPM1mBH8VutD5t7aHjbBcnjOzmZUo7KA2VrSeEUaJM2pTRXGoNG4gnbYQ41OOj9RQ=
